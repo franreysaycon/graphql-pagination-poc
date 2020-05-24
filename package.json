@@ -1,0 +1,19 @@
+{
+  "name": "frapollo-books-pagination",
+  "version": "1.0.0",
+  "description": "Apollo server that follows the cursor connection specifications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franreysaycon/frapollo-books-pagination.git"
+  },
+  "author": "Franrey Anthony S. Saycon <me@fsaycon.dev>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franreysaycon/frapollo-books-pagination/issues"
+  },
+  "homepage": "https://github.com/franreysaycon/frapollo-books-pagination#readme"
+}
