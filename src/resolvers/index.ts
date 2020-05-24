@@ -1,17 +1,8 @@
-import { IResolverObject } from "apollo-server";
+import { IResolvers } from "apollo-server";
+import BookResolver from "./book-resolver";
 
-const books = []
-
-const resolvers: IResolverObject = {
-    Query: {
-      books: () => [
-        {
-            title: "Hello World",
-            author: "Me and Only Me",
-            description: "This is a test.",
-        }
-      ],
-    },
-};
+const resolvers: IResolvers[] = [
+  BookResolver,
+]
 
 export default resolvers;

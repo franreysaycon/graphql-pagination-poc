@@ -1,15 +1,19 @@
 import { gql } from "apollo-server";
+import BookSchema from "./book-schema";
 
-const typeDefs = gql`
-  type Book {
-    title: String
-    author: String
-    description: String
-  }
-
-  type Query {
-    books: [Book]
-  }
+const LinkSchema = gql`
+    type Query {
+        _: Boolean
+    }
+    type Mutation {
+        _: Boolean
+    }
+    type Subscription {
+        _: Boolean
+    }
 `;
 
-export default typeDefs;
+export default [
+  LinkSchema,
+  BookSchema,
+];

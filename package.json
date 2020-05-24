@@ -4,7 +4,7 @@
   "description": "Apollo server that follows the cursor connection specifications.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsnd --poll --respawn --transpileOnly src/index.ts"
   },
   "repository": {
     "type": "git",
