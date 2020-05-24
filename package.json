@@ -18,6 +18,10 @@
   "homepage": "https://github.com/franreysaycon/frapollo-books-pagination#readme",
   "dependencies": {
     "apollo-server": "^2.13.1",
-    "graphql": "^15.0.0"
+    "graphql": "^15.0.0",
+    "typescript": "^3.9.3"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.44"
   }
 }
