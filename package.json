@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/franreysaycon/frapollo-books-pagination/issues"
   },
-  "homepage": "https://github.com/franreysaycon/frapollo-books-pagination#readme"
+  "homepage": "https://github.com/franreysaycon/frapollo-books-pagination#readme",
+  "dependencies": {
+    "apollo-server": "^2.13.1",
+    "graphql": "^15.0.0"
+  }
 }
