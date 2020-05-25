@@ -2,6 +2,13 @@ import { gql } from "apollo-server";
 import BookSchema from "./book-schema";
 
 const LinkSchema = gql`
+    type PageInfo {
+        hasNextPage: Boolean!
+        hasPreviousPage: Boolean!
+        startCursor: String!
+        endCursor: String!
+    }
+
     type Query {
         _: Boolean
     }
@@ -14,6 +21,6 @@ const LinkSchema = gql`
 `;
 
 export default [
-  LinkSchema,
-  BookSchema,
+    LinkSchema,
+    BookSchema,
 ];

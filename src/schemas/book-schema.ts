@@ -2,13 +2,24 @@ import { gql } from "apollo-server";
 
 const BookSchema = gql`
     type Book {
-        title: String
-        author: String
-        description: String
+        id: ID!
+        title: String!
+        author: String!
+        description: String!
+    }
+
+    type BookEdge {
+        cursor: String!
+        node: Book
+    }
+
+    type BookConnection {
+        edges: [BookEdge]!
+        pageInfo: PageInfo!
     }
 
     extend type Query {
-        books: [Book]
+        books(first: Int,  after: String, last: Int, before: String): BookConnection!
     }
 `;
 
