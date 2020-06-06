@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/franreysaycon/frapollo-books-pagination#readme",
   "dependencies": {
-    "apollo-server": "^2.13.1",
+    "apollo-server": "^2.14.2",
     "graphql": "^15.0.0",
     "typescript": "^3.9.3"
   },
